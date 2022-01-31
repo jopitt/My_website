@@ -1,0 +1,133 @@
+body {
+    background-color: #f7e4e8;
+}
+
+h1 {
+    color:#f92a82;
+    font-family: 'Caveat', cursive;
+    font-size: 5em;
+    margin: 0px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    margin: 5px 0;
+}
+
+h3 {
+    font-family: 'Source Serif 4', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+h4 {
+    font-family: 'Source Serif 4', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p {
+    font-family: 'Source Serif 4', sans-serif;
+    margin-top: 0px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 420px;
+}
+
+#sidebar {
+    padding: 20px;
+    margin-right: 50px;
+    position: fixed;
+    top: 410px;
+}
+
+nav ul {
+    list-style-type: none;
+    list-style: none;
+    margin-top: 0;
+}
+
+nav li {
+    padding-bottom: 20px;
+}
+
+nav a {
+    color: black;
+    font-family: 'Caveat', cursive;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+#main {
+    background-image: url(/images/sakura-digital-paper-5316790_1920.jpg);
+    display: flex;
+}
+
+#content {
+    height: 5600px;
+    width: 1000px;
+    margin-left: 300px;
+}
+
+article {
+    background-color: #F5E9E2;
+    padding: 20px;
+    width: 300px;
+}
+
+article img {
+    margin-top: 10px;
+}
+
+.container {
+    height: 500px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.smallContainer {
+    height: 400px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#articleVioleta {
+    height: 600px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#articleJackie {
+    height: 650px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articleRight {
+    width: 575px;
+}
+
+#news img {
+    border-radius: 120px;
+}
+
+.round img {
+    border-radius: 120px;
+}
+
+#backToTop {
+    
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+

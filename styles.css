@@ -1,5 +1,5 @@
 body {
-    background-color: #f7e4e8;
+    background-image: url(/images/sakura-digital-paper-5316790_1920.jpg);
 }
 
 h1 {
@@ -11,7 +11,8 @@ h1 {
 
 h2 {
     font-family: 'Playfair Display', serif;
-    margin: 5px 0;
+    margin-left: 60px;
+    margin-bottom: 5px;
 }
 
 h3 {
@@ -32,28 +33,24 @@ p {
 }
 
 header {
+    background-color: #f7e4e8;
+    height: 500px;
+}
+
+.heading {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 420px;
+    align-items: center;
 }
 
-#sidebar {
-    padding: 20px;
-    margin-right: 50px;
-    position: fixed;
-    top: 410px;
-}
-
-nav ul {
+div nav ul {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    justify-content: space-evenly;
     list-style-type: none;
     list-style: none;
-    margin-top: 0;
-}
-
-nav li {
-    padding-bottom: 20px;
 }
 
 nav a {
@@ -63,71 +60,51 @@ nav a {
     text-decoration: none;
 }
 
-#main {
-    background-image: url(/images/sakura-digital-paper-5316790_1920.jpg);
-    display: flex;
-}
-
-#content {
-    height: 5600px;
-    width: 1000px;
-    margin-left: 300px;
+nav a:hover {
+    color: #f92a82;
+    text-decoration: underline;
 }
 
 article {
-    background-color: #F5E9E2;
+    margin: 0 60px;
     padding: 20px;
-    width: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+article div {
+    padding: 20px;
+    background-color: #F5E9E2;
 }
 
 article img {
     margin-top: 10px;
 }
 
-.container {
-    height: 500px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.smallContainer {
-    height: 400px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#articleVioleta {
-    height: 600px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#articleJackie {
-    height: 650px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.articleRight {
-    width: 575px;
-}
-
-#news img {
+.roundLogo {
     border-radius: 120px;
 }
 
-.round img {
-    border-radius: 120px;
+
+footer {
+    background-color: #f7e4e8;
+    height: 20px;
+    padding: 10px 10px;
+    position: relative;
 }
 
 #backToTop {
-    
     position: fixed;
     right: 20px;
-    bottom: 20px;
+    bottom: 30px;
 }
 
+#backToTop a {
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#backToTop a:hover {
+    color: #f92a82;
+    text-decoration: underline;
+}

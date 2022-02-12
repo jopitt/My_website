@@ -64,7 +64,8 @@ h3 {
 }
 
 h4 {
-    font-family: 'Source Serif 4', sans-serif;
+    font-family: 'Oooh Baby', cursive;
+    font-size: 1.5em;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -101,6 +102,10 @@ h4 {
     color: #C16200;
 }
 
+.currentIssue {
+    font-family: 'Poiret One', cursive;
+}
+
 .kindness h3 {
     color: #4E5283;
 }
@@ -110,8 +115,12 @@ h4 {
 }
 
 p {
-    font-family: 'Source Serif 4', sans-serif, 300;
+    font-family: 'Open Sans', sans-serif;
     margin-top: 0px;
+}
+
+.byline {
+    font-family: 'Poiret One', cursive;
 }
 
 article {

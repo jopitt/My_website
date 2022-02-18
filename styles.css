@@ -5,13 +5,19 @@
 --steel-blue: #3f7cacff;
 --purple-navy: #4e5283ff; */
 
-body {
+/* 1440px */
+
+body, header, main, section, article, div, footer {    
+    margin: 0px;
+}
+
+.body {
     background-image: url(/images/sakura-digital-paper-5316790_1920.jpg);
 }
 
 header {
     background-color: #f7e4e8;
-    height: 500px;
+    height: auto;
 }
 
 #siteHeading {
@@ -22,25 +28,24 @@ header {
 }
 
 h1 {
-    color:#f92a82;
     font-family: 'Caveat', cursive;
     font-size: 5em;
-    margin: 0px;
+    color:#f92a82;
+    margin: 0;
 }
 
-div nav ul {
+nav ul {
+    margin: 0px;
+    font-family: 'Caveat', cursive;
+    font-size: 2em;
     display: flex;
     flex-direction: row;
-    height: 60px;
     justify-content: space-evenly;
-    list-style-type: none;
     list-style: none;
 }
 
 nav a {
     color: black;
-    font-family: 'Caveat', cursive;
-    font-size: 2em;
     text-decoration: none;
 }
 
@@ -49,25 +54,41 @@ nav a:hover {
     text-decoration: underline;
 }
 
-h2 {
-    font-family: 'Caveat', cursive;    
-    font-size: 3em;
-    margin-left: 60px;
-    margin-bottom: 5px;
+#main-panel {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-h3 {
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: 'Caveat', cursive;    
+    font-size: 2.5em;
+    margin: 0 0;
+}
+
+article {
+    padding: 10px;
+    background-color: #F5E9E2;
+}
+
+.article-heading {
     font-family: 'Source Serif 4', sans-serif;
-    font-size: 1.5em;
-    margin-top: 5px;
-    margin-bottom: 0px;
+    font-size: 2em;
+    text-align: center;    
 }
 
 h4 {
     font-family: 'Oooh Baby', cursive;
-    font-size: 1.5em;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    font-size: 2em;
+    margin: 5px 0;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 .news h3 {
@@ -78,12 +99,21 @@ h4 {
     color:#f92a82;
 }
 
+.news a {
+    color:#f92a82;
+}
+
 .money h3 {
     color: #3f7cac;
 }
 
 .money h4 {
     color: #3f7cac;
+}
+
+.money a {
+    color: #3f7cac;
+    text-decoration: none;
 }
 
 .books h3 {
@@ -96,81 +126,276 @@ h4 {
 
 .magazines h3 {
     color: #C16200;
+    margin-bottom: 0px;
 }
 
 .magazines h4 {
     color: #C16200;
 }
 
-.currentIssue {
+.magazines a {
+    color: #C16200;
+}
+.current-issue {
     font-family: 'Poiret One', cursive;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 .kindness h3 {
     color: #4E5283;
+    margin-bottom: 0px;
 }
 
 .kindness h4 {
     color: #4E5283;
 }
 
-p {
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 0px;
+.center-text {
+    margin-top: 0;
+    text-align: center;
 }
 
-.byline {
+.subheading {
     font-family: 'Poiret One', cursive;
-}
-
-article {
-    margin: 0 60px;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-}
-
-article div {
-    padding: 20px;
-    background-color: #F5E9E2;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 article img {
     margin-top: 10px;
 }
 
-#womanKindImage {
-    margin-bottom: 10px;
+.article-img {
+    display: block;
+    margin: 0 auto;
 }
 
-.roundLogo {
+.round-logo {
     border-radius: 120px;
+    display: block;
+    margin: 0 auto;
 }
 
 footer {
     background-color: #f7e4e8;
-    height: 20px;
-    padding: 10px 10px;
+    margin-top: 10px;
+    height: 50px;
+    padding-left: 5px;
     position: relative;
-}
-
-footer div p {
-    font-size: 100%;
+    font-size: 1em;
 }
 
 #backToTop {
     position: fixed;
+    font-size: 1.5em;
     right: 20px;
-    bottom: 30px;
+    bottom: 0;
 }
 
 #backToTop a {
     text-decoration: none;
-    font-size: 1.5em;
     color: black;
 }
 
 #backToTop a:hover {
     color: #f92a82;
-    font-size: 2em;
+    font-size: 1.5em;
 }
+
+@media screen and (min-width: 320px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .header-img {
+        width: 50%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        font-size: .5em;
+    }
+
+    #main-panel {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .article-heading {
+        font-size: .8em;
+    }
+
+    div h4 {
+        font-size: 1em;
+    }
+
+    .subheading {
+        font-size: 1em;
+    }
+    
+    .round-logo {
+        width: 20%
+    }
+
+    .article-img {
+        width: 30%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .current-issue {
+        font-size: 1em;
+    }
+    #womankind-img {
+        width: 50%;
+    }
+    
+    .sponsorship-img {
+        width: 60%;
+    }
+
+    footer {
+        font-size: .5em;
+    }
+
+    #backToTop {
+        position: fixed;
+        font-size: 2em;
+        right: 5px;
+        bottom: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+        nav ul {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #main-panel {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .article-img {
+            width: 20%;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        #main-panel {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            font-size: 1em;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+        .article-img {
+            width: 20%;
+        }
+    
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        h1 {
+            font-size: 5em;
+        }
+        
+        nav a {
+            font-size: 1.5em;
+        }
+
+        #main-panel {
+            max-width: 1000px;
+        }
+
+        h2 {
+            font-size: 3em;
+        }
+
+        .article-heading {
+            font-size: 2em;
+        }
+
+        div h4 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+        
+        .subheading {
+            font-size: 1.5em;
+        }
+
+        .current-issue {
+            font-size: 1.5em;
+        }
+    }
+
+    @media screen and (min-width: 2560px) {
+        h1 {
+            font-size: 8em;
+        }
+
+        nav a {
+            font-size: 2.5em;
+        }
+        
+        #main-panel {
+            max-width: 2000px;
+        }
+
+        h2 {
+            font-size: 5em;
+        }
+
+        .article-heading {
+            font-size: 3em;
+        }
+
+        div h4 {
+            font-size: 3.5em;
+        }
+
+        p {
+            font-size: 2em;
+        }
+        
+        .subheading {
+            font-size: 3em;
+        }
+
+        .current-issue {
+            font-size: 3em;
+        }
+
+        .round-logo {
+            border-radius: 200px;
+        }
+
+        #backToTop {
+            position: fixed;
+            font-size: 3em;
+            right: 5px;
+            bottom: 0;
+        }
+    }
+  }
+

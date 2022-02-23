@@ -1,0 +1,138 @@
+/* CSS HEX
+--rose: #f92a82ff;
+--dark-sea-green: #7eb77fff;
+--linen: #f5e9e2ff;
+--steel-blue: #3f7cacff;
+--purple-navy: #4e5283ff; */
+
+/* 1440px */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/sakura-digital-paper-5316790_1920.jpg);
+}
+
+header {
+    background-color: #f7e4e8;
+    height: auto;
+}
+
+#form-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 3.5em;
+    color:#f92a82;
+    
+}
+
+img {
+    width: 20%;
+    padding-bottom: 2em;;
+}
+
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 2em;
+    color:#f92a82;
+    margin-bottom: 0;
+}
+
+span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8em;
+}
+
+#main-content p {
+    padding: 1em 0 2.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1esm;
+    color: #25255F;
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5E9E2;
+    padding: 2em 1em 2em;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10em;
+}
+
+.field {
+    margin-bottom: 1em;
+    color: rgb(30, 36, 103);
+    font-size: 1rem;
+}
+
+/* How far from the end of the label name the input field ends */
+.field label {
+    margin-right: 5em;
+}
+
+.field input,
+.field textarea,
+.field select {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8em;
+    padding: 0.5em;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 8em;
+}
+
+.preselect-field {
+    margin: .5em 0 0;
+}
+
+.preselect-field input {
+    margin: 0;
+    width: auto;
+    display: inline-block;
+}
+
+.dropdown-field {
+    margin-top: 1.5em;
+}
+
+input[type=submit] {
+    background-color: #3f7cac;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    text-transform: uppercase;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all .5s ease;
+    margin-top: 2em;
+}
+
+input[type=submit]:hover {
+    background-color: #f92a82;
+}
+
+footer {
+    background-color: #f7e4e8;
+    color: rgb(30, 36, 103);;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8em;
+}

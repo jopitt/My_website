@@ -55,22 +55,23 @@
 				</div>
 
 				<div class="field">
-					<label>How often would you like to see Stuff I Like updated?</label>
-					<div class="field preselect-field">
-						<input type="radio" 
-						name="when" id="week" value="weekly">
-						<label for="week">Weekly</label>
-					</div>
-					<div class="field preselect-field">
-						<input type="radio" 
-						name="when" id="fortnight" value="fortnightly">
-						<label for="fortnight">Fortnightly</label>
-					</div>
-					<div class="field preselect-field">
-						<input type="radio"
-						name="when" id="day" value="monthly">
-						<label for="day">Monthly</label>
-					</div>
+					<label>How often would you like to see Stuff I Like updated?
+						<div class="field preselect-field">
+							<input type="radio" 
+							name="when" id="week" value="weekly">
+							<label for="week">Weekly</label>
+						</div>
+						<div class="field preselect-field">
+							<input type="radio" 
+							name="when" id="fortnight" value="fortnightly">
+							<label for="fortnight">Fortnightly</label>
+						</div>
+						<div class="field preselect-field">
+							<input type="radio"
+							name="when" id="day" value="monthly">
+							<label for="day">Monthly</label>
+						</div>
+					</label>
 				</div>
 
 				<div class="field">
@@ -92,12 +93,12 @@
 					</div>
 					<div class="field preselect-field">
 						<input type="checkbox" 
-						name="Magazines" id="magazines" value="magazines">
+						name="magazines" id="magazines" value="magazines">
 						<label for="magazines">Magazines</label>
 					</div>
 					<div class="field preselect-field">
 						<input type="checkbox" 
-						name="Kindness" id="kindness" value="kindness">
+						name="kindness" id="kindness" value="kindness">
 						<label for="kindness">Kindness</label>
 					</div>
 				</div>
@@ -105,23 +106,31 @@
 				
 				<div class="field dropdown-field">
 					<label for="book-type">If you're interested in Books, select your favourite genre?</label>
-					<select id="book-type" name="choice">
+					<select id="book-type" name="book-type">
 						<option value="">Please select...</option>
 						<option value="fiction">Fiction</option>
 						<option value="non-fiction">Non-fiction</option>
-						<option value="both">Both!</option>
+						<option value="both fiction, non-fiction">Both!</option>
 					</select>
 				</div>
 
 				<div class="field dropdown-field">
 					<label for="magazine-type">If you're interested in Magazines, select your favourite genre?</label>
-					<select id="magazine-type" name="choice">
+					<select id="magazine-type" name="magazine-type">
 						<option value="">Please select...</option>
-						<option value="fiction">Philosophy</option>
-						<option value="non-fiction">Science</option>
-						<option value="both">Both!</option>
+						<option value="philosophy">Philosophy</option>
+						<option value="science">Science</option>
+						<option value="both philospohy, science">Both!</option>
 					</select>
 				</div>
+
+				<div class="field range-field">
+					<label>Indicate your age group (between 10 and 60)</label>
+					<input type="range" name="age" min="10" max="60">
+					
+				</div>
+
+				
 			
 				<input type="submit" value="Submit">
 				

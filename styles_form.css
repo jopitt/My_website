@@ -27,7 +27,7 @@ header {
 
 h1 {
     font-family: 'Caveat', cursive;
-    font-size: 3.5em;
+    font-size: 4em;
     color:#f92a82;
     
 }
@@ -47,7 +47,7 @@ img {
 
 h2 {
     font-family: 'Caveat', cursive;
-    font-size: 2em;
+    font-size: 2.5em;
     color:#f92a82;
     margin-bottom: 0;
 }
@@ -60,7 +60,7 @@ span {
 #main-content p {
     padding: 1em 0 2.5em;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1esm;
+    font-size: 1.5em;
     color: #25255F;
     margin-top: 0;
 }
@@ -73,6 +73,7 @@ form {
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 10em;
 }
+
 
 .field {
     margin-bottom: 1em;
@@ -89,7 +90,7 @@ form {
 .field textarea,
 .field select {
     font-family: 'Open Sans', sans-serif;
-    font-size: .8em;
+    font-size: 1em;
     padding: 0.5em;
     width: 100%;
     display: block;
@@ -114,10 +115,14 @@ textarea {
     margin-top: 1.5em;
 }
 
+.range-field {
+    margin-top: 2em;
+}
+
 input[type=submit] {
     background-color: #3f7cac;
     color: white;
-    font-size: 1.5em;
+    font-size: 1em;
     border: none;
     text-transform: uppercase;
     padding: 1em 2em;

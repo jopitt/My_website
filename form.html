@@ -10,22 +10,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <title>CLG Web Dev Lesson 9</title>
+    <title>CLG Web Dev Lesson 10</title>
   </head>
   <body>
 	<header>
-		<div id="form-heading">
-			<h1>Stuff I Like</h1>
-			<img src="images/girlUnderTree.png" alt="Girl using laptop">
+		<div>
+			<img onContextMenu="alert('I found this image on https://pixabay.com/');" src="images/girlUnderTree.png" alt="Girl using laptop">
 		</div>
 	</header>
 
 	<section id="main-content">
 		<div class="wrapper">
-			<h2><span>Welcome to</span> Stuff I Like</h2>
-			<p id="subheading">I'd like to hear about stuff you like. Please tell me a bit about yourself.</p>
+			<h2 onclick="welcomeHeading();">Welcome to <span class="welcome">Stuff I Like</span></h2>
+			<p class="subheading"></p>
 
-			<form accept-charset="UTF-8" action="https://www.formbackend.com/f/f89bd5a7d730a88a" method="POST">
+			<form onMouseOut="formColour()";accept-charset="UTF-8" action="https://www.formbackend.com/f/f89bd5a7d730a88a" method="POST" >
 				<div class="field">
 					<label for="name">
 						What's your name?
@@ -43,14 +42,14 @@
 				<div class="field">
 					<label>
 						Set a password so you can save your favourite stuff?
-						<input type="password" name="password" placeholder="Minimum 8 letters ...">
+						<input type="password" name="password" placeholder="minimum 8 letters">
 					</label>
 				</div>
 
 				<div class="field">
 					<label for="inspo-why">
 						Why are you interested in Stuff I Like?
-						<textarea>I'm interested in Stuff I Like because... </textarea>
+						<textarea onDblClick="textBox()"; placeholder="Double click here."></textarea>
 					</label>
 				</div>
 
@@ -106,7 +105,7 @@
 				
 				<div class="field dropdown-field">
 					<label for="book-type">If you're interested in Books, select your favourite genre?</label>
-					<select id="book-type" name="book-type">
+					<select onChange="selectBook();" id="book-type" name="book-type">
 						<option value="">Please select...</option>
 						<option value="fiction">Fiction</option>
 						<option value="non-fiction">Non-fiction</option>
@@ -116,7 +115,7 @@
 
 				<div class="field dropdown-field">
 					<label for="magazine-type">If you're interested in Magazines, select your favourite genre?</label>
-					<select id="magazine-type" name="magazine-type">
+					<select onChange="selectMagazine();" id="magazine-type" name="magazine-type">
 						<option value="">Please select...</option>
 						<option value="philosophy">Philosophy</option>
 						<option value="science">Science</option>
@@ -124,14 +123,14 @@
 					</select>
 				</div>
 
+				<div class="additionalText">
+					<p></p></div>
+
 				<div class="field range-field">
 					<label>Indicate your age group (between 10 and 60)</label>
-					<input type="range" name="age" min="10" max="60">
-					
+					<input type="range" name="age" min="10" max="60" onMouseOver="ageOptional()";>	
 				</div>
 
-				
-			
 				<input type="submit" value="Submit">
 				
 			</form>		
@@ -143,6 +142,60 @@
 		  <p>© 2022 Jo Pittendreigh. All rights reserved.</p>
 		</div>
 	</footer>
+
+	<script>
+
+		let message = 'Click on "Welcome"';
+		alert(message);
+
+		function formColour() {
+			let formColour = document.querySelector('form');
+			console.log(formColour);
+			formColour.style.backgroundColor = "#F5E9E2";
+		}
+
+		function textBox() {
+			let textBox = document.querySelector('textarea');
+			console.log(textBox);
+			textBox.textContent = "I'm interested in Stuff I Like because...";
+		}
+
+		function welcomeHeading() {
+			let welcomeHeading = document.querySelector('.welcome');
+			console.log(welcomeHeading);
+			welcomeHeading.style.color = "#3f7cacff";
+			welcomeHeading.style.fontSize = "1.5em";
+			welcomeHeading.textContent = 'Stuff You Like';
+			
+
+			let welcomePara = document.querySelector('.subheading');
+			console.log(welcomePara);
+			welcomePara.textContent = "I'd like to hear about stuff you like!";
+		}
+
+		function selectBook() {
+			let selectBookMessage = 'I like your thinking!';
+			alert(selectBookMessage);
+			console.log(selectBookMessage);
+		}
+
+		function selectMagazine() {
+			let selectMagMessage = 'Great choice!';
+			alert(selectMagMessage);
+			console.log(selectMagMessage);
+		}
+
+		function ageOptional() {
+			let ageOptional = document.querySelector('.additionalText');
+			console.log(ageOptional);
+			ageOptional.style.color = "#f92a82";
+			ageOptional.style.fontSize = "1em";
+			ageOptional.style.marginBottom = "0";
+			ageOptional.textContent = "Indicating your age is optional."
+		}
+		
+
+	</script>
 
   </body>
 </html>

@@ -18,18 +18,24 @@ header {
     height: auto;
 }
 
-#form-heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
+img {
+    display: block;
+    margin: 0 auto;
 }
 
 h1 {
     font-family: 'Caveat', cursive;
     font-size: 4em;
     color:#f92a82;
+    margin-bottom: 0;
     
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5em;
+    color:#f92a82;
+    margin-bottom: 0;
 }
 
 img {
@@ -45,19 +51,14 @@ img {
     align-items: center;
 }
 
-h2 {
+.welcome {
     font-family: 'Caveat', cursive;
-    font-size: 2.5em;
-    color:#f92a82;
-    margin-bottom: 0;
+    font-size: 1.5em;
+    display: block;
+    transform: rotate(-5deg);
 }
 
-span {
-    font-family: 'Open Sans', sans-serif;
-    font-size: .8em;
-}
-
-#main-content p {
+.subheading {
     padding: 1em 0 2.5em;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5em;
@@ -68,7 +69,7 @@ span {
 form {
     display: flex;
     flex-direction: column;
-    background-color: #F5E9E2;
+    background-color: #7eb77fff;
     padding: 2em 1em 2em;
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 10em;
@@ -78,7 +79,7 @@ form {
 .field {
     margin-bottom: 1em;
     color: rgb(30, 36, 103);
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 /* How far from the end of the label name the input field ends */
@@ -113,6 +114,12 @@ textarea {
 
 .dropdown-field {
     margin-top: 1.5em;
+}
+
+.additionalText {
+    margin-bottom: 1em;
+    color: rgb(30, 36, 103);
+    font-size: 1rem;
 }
 
 .range-field {
